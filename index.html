@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="/css/app.css" />
     <link
-      rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Open Sans"
+      rel="stylesheet"
     />
     <script src="/js/app.js" defer></script>
     <title>Color Flipper</title>
@@ -15,11 +15,20 @@
   <body>
     <nav id="nav">
       <h2>Color Flipper</h2>
-      <a href="https://github.com/iamdarshangowda">Darshan Gowda</a>
+      <ul id="lists">
+        <li><a target="_blank" href="https://github.com/iamdarshangowda">My GitHub</a></li>
+      </ul>
     </nav>
-    <header class="element">
-      <h1 id="bgtext">Background Color: <span class="hexcolor"></span></h1>
-      <button onclick="setColor()">Click Me</button>
-    </header>
+    <main>
+      <div id="container">
+        <h1>Background Color: <span id="hexcode">#000000</span></h1>
+        <button id="btn" onclick="setColor()">Change Color</button>
+      </div>
+    </main>
+    <footer>
+        <p>Created by <a target="_blank" href="https://www.linkedin.com/in/darshan-gowda-8405b4153/"
+            >Darshan Gowda</a
+          ></p>
+    </footer>
   </body>
 </html>
